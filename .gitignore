@@ -1,0 +1,13 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Hugging Face cache (optional but recommended)
+.cache/
+.huggingface/
+
+# OS files
+.DS_Store
