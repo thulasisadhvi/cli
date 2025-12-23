@@ -1,9 +1,10 @@
-# Local LLM CLI Tool
+# CLI Text Generator
+## Overview
 
-This project is a simple command-line tool to run **local language models** using **Hugging Face Transformers**.  
-It allows users to select the model, prompt, and generation parameters directly from the terminal.
+This project is a Python-based Command Line Interface (CLI) tool for generating text using Hugging Face Transformers.
+It supports multiple models, configurable generation parameters, and streaming output where tokens are displayed progressively in the terminal.
 
-The main goal is to understand how local LLM inference works without using any external APIs.
+This tool is designed to demonstrate correct usage of the transformers library, clean CLI design, and robust error handling.
 
 ---
 
@@ -15,16 +16,28 @@ The main goal is to understand how local LLM inference works without using any e
 
 ---
 
-## Installation
+## Requirements
+-Python 3.9 or higher
+-pip
+-Internet connection (models are downloaded from Hugging Face on first run)
+
+---
+
+## SET UP
+## clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/llm_cli.git
-cd llm_cli
-python -m venv .venv
-source .venv/bin/activate
+git clone https://github.com/thulasisadhvi/cli.git
+cd cli
+```
+
+## Install dependencies
+
+```bash
 pip install -r requirements.txt
 ```
-##usage
+## usage
+Basic text generation
 ```bash
 python cli.py \
   --model gpt2 \
